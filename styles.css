@@ -1,4 +1,4 @@
-/* General Styles */
+<style>
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -10,22 +10,23 @@ body {
 header {
   background: #333;
   color: #fff;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   text-align: center;
 }
 
 header .logo {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-  display: inline;
   margin: 0 1rem;
 }
 
@@ -34,37 +35,24 @@ nav ul li a {
   text-decoration: none;
 }
 
-.banner {
-  position: relative;
-  text-align: center;
-}
-
 .banner img {
   width: 100%;
-  height: auto;
-}
-
-.banner-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 1rem;
+  height: 300px;
+  object-fit: cover;
 }
 
 .about {
   display: flex;
   align-items: center;
   padding: 2rem;
+  flex-wrap: wrap;
 }
 
 .about .profile img {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  margin-right: 2rem;
+  width: 120px;
+  height: 120px;
+  margin-right: 1.5rem;
 }
 
 .stats {
@@ -73,11 +61,29 @@ nav ul li a {
   background: #f4f4f4;
   padding: 2rem;
   text-align: center;
+  flex-wrap: wrap;
 }
 
-.stats .stat-item h3 {
-  font-size: 2rem;
-  margin: 0;
+.stats .stat-item {
+  flex: 1;
+  min-width: 120px;
+}
+
+.consultation {
+  padding: 2rem;
+  text-align: center;
+}
+
+.consultation .services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.consultation .service-item {
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
 footer {
@@ -87,65 +93,4 @@ footer {
   padding: 1rem 0;
   margin-top: 2rem;
 }
-
-/* Consultation Page */
-.consultation {
-  padding: 2rem;
-}
-
-.consultation .services {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.consultation .service-item {
-  background: #f4f4f4;
-  padding: 1rem;
-  border-radius: 5px;
-  flex: 1 1 calc(33.333% - 2rem);
-}
-
-.consultation .contact {
-  margin-top: 2rem;
-}
-
-/* Course Page */
-.course {
-  padding: 2rem;
-}
-
-.course .course-details ul {
-  list-style: none;
-  padding: 0;
-}
-
-.course .course-details ul li {
-  background: #f4f4f4;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  border-radius: 5px;
-}
-
-/* Blogs Page */
-.blogs {
-  padding: 2rem;
-}
-
-.blog-list {
-  display: flex;
-  gap: 1rem;
-}
-
-.blog-item {
-  background: #f4f4f4;
-  padding: 1rem;
-  border-radius: 5px;
-  flex: 1 1 calc(50% - 1rem);
-}
-
-.blog-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
+</style>
