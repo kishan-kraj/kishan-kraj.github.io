@@ -20,6 +20,12 @@ body {
   color: white;
 }
 
+.navbar .container {
+  display: flex;
+  justify-content: space-between; /* Space between logo and nav links */
+  align-items: center; /* Vertically center items */
+}
+
 .navbar .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -30,7 +36,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1.5rem; /* Space between nav links */
   margin: 0;
   padding: 0;
 }
@@ -39,6 +45,11 @@ body {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffdd57; /* Change color on hover */
 }
 
 /* Banner */
