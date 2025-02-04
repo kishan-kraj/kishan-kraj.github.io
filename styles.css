@@ -1,4 +1,3 @@
-/* General Styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -11,6 +10,7 @@ body {
   max-width: 1200px;
   margin: auto;
   padding: 0 20px;
+  text-align: center;
 }
 
 /* Header Styles */
@@ -88,8 +88,10 @@ nav ul li a:hover {
 /* About Section Styles */
 .about {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 40px;
+  text-align: center;
+  gap: 20px;
   padding: 60px 0;
   background: #f9f9f9;
   border-radius: 10px;
@@ -102,6 +104,11 @@ nav ul li a:hover {
   height: 200px;
   object-fit: cover;
   border: 5px solid #2c3e50;
+}
+
+.content {
+  max-width: 800px;
+  text-align: center;
 }
 
 .content h2 {
@@ -118,7 +125,8 @@ nav ul li a:hover {
 /* Stats Section Styles */
 .stats {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 40px;
   background: #2c3e50;
   padding: 60px 0;
   color: white;
@@ -139,66 +147,6 @@ nav ul li a:hover {
 .stats .stat-item p {
   font-size: 1.1rem;
   color: #bdc3c7;
-}
-
-/* Consultation Page Styles */
-.consultation {
-  padding: 60px 0;
-}
-
-.consultation h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #2c3e50;
-  margin-bottom: 40px;
-}
-
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin-bottom: 40px;
-}
-
-.service-item {
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.service-item:hover {
-  transform: translateY(-10px);
-}
-
-.service-item h3 {
-  font-size: 1.5rem;
-  color: #2c3e50;
-  margin-bottom: 10px;
-}
-
-.service-item p {
-  font-size: 1rem;
-  color: #555;
-}
-
-.contact {
-  text-align: center;
-  background: #2c3e50;
-  padding: 30px;
-  border-radius: 10px;
-  color: white;
-}
-
-.contact h3 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-}
-
-.contact p {
-  font-size: 1.1rem;
-  margin: 10px 0;
 }
 
 /* Footer Styles */
